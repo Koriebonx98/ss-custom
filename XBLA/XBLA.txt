@@ -1,0 +1,77 @@
+# Define file paths
+$logFile = "{PlayniteDir}\Emulation\Emulators\Xenia\xenia - XBLA\xenia.log"
+$textFile = "{PlayniteDir}\Emulation\Emulators\Xenia\xenia - XBLA\Achievements\{Name}.txt"
+$jsonFile = "{PlayniteDir}\ExtensionsData\cebe6d32-8c46-4459-b993-5a5189d60788\SuccessStory\{DatabaseId}.json"
+$newJsonFile = "{PlayniteDir}\Emulation\Emulators\Xenia\xenia - XBLA\Achievements\{DatabaseId}.json"
+
+# Copy JSON file if it exists
+if (Test-Path $jsonFile) {
+    Copy-Item -Path $jsonFile -Destination $newJsonFile
+    Write-Host "JSON file copied successfully."
+}
+else {
+    Write-Host "JSON file not found."
+}
+
+# Read log content
+$logContent = Get-Content $logFile
+
+# Find unlocked achievements
+$unlockedAchievements = $logContent | Where-Object { $_ -match "Achievement unlocked" } | ForEach-Object {
+    $achievementName = $_ -replace "Achievement unlocked:", "" -replace "`r", "" -replace "i> [A-F0-9]{8}", ""
+    $achievementName.Trim()
+}
+
+# Write achievements to text file
+if (-not (Test-Path $textFile)) {
+    $unlockedAchievements | ForEach-Object {
+        "Unlocked:`r`n`"$($_)`" `"$((Get-Date).ToString("yyyy-MM-ddTHH:mm:ss"))`""
+    } | Out-File $textFile
+}
+else {
+    $existingAchievements = Get-Content $textFile
+    $newAchievements = $unlockedAchievements | Where-Object { $_ -notin $existingAchievements }
+    $newAchievements | ForEach-Object {
+        "Unlocked:`r`n`"$($_)`" `"$((Get-Date).ToString("yyyy-MM-ddTHH:mm:ss"))`""
+    } | Add-Content $textFile
+}
+
+# Update JSON file
+if (Test-Path $newJsonFile) {
+    $jsonContent = Get-Content $newJsonFile | ConvertFrom-Json
+
+    foreach ($item in $jsonContent.Items) {
+        if ($item.Name.Trim() -in $unlockedAchievements -and $item.DateUnlocked -eq "0001-01-01T00:00:00") {
+            $item.DateUnlocked = Get-Date -Format "yyyy-MM-ddTHH:mm:ss"
+        }
+    }
+
+    $jsonContent.Items = $jsonContent.Items | Sort-Object DateUnlocked
+    $jsonContent | ConvertTo-Json -Compress | Set-Content $newJsonFile
+    Write-Host "JSON file updated successfully."
+}
+else {
+    Write-Host "JSON file not found."
+}
+
+# Delete the original JSON file
+if (Test-Path $jsonFile) {
+    Remove-Item -Path $jsonFile
+    Write-Host "Original JSON file deleted successfully."
+}
+
+# Copy the new JSON file to the original location
+if (Test-Path $newJsonFile) {
+    Copy-Item -Path $newJsonFile -Destination $jsonFile
+    Write-Host "New JSON file copied to the original location."
+}
+else {
+    Write-Host "New JSON file not found."
+}# Copy JSON file if it exists
+if (Test-Path $jsonFile) {
+    Copy-Item -Path $jsonFile -Destination $newJsonFile
+    Write-Host "JSON file copied successfully."
+}
+else {
+    Write-Host "JSON file not found."
+}
