@@ -1,0 +1,26 @@
+# Define the file path
+$filePath = "{PlayniteDir}/Emulation/Emulators/Xenia/xenia canary/last_updated.txt"
+
+# Check if the file exists
+if (Test-Path $filePath) {
+    # Get the last updated date from the file
+    $lastUpdated = Get-Content $filePath | Get-Date
+
+    # Check if the file is less than 7 days old
+    if (((Get-Date) - $lastUpdated).Days -lt 7) {
+        Write-Output "File is less than 7 days old, skipping download."
+        exit
+    }
+}
+
+# Download the file
+Invoke-WebRequest -Uri "https://github.com/xenia-canary/xenia-canary/releases/download/experimental/xenia_canary.zip" -OutFile "{PlayniteDir}/Emulation/Emulators/Xenia/xenia canary/xenia_canary.zip"
+
+# Extract the zip file
+Start-Process -FilePath 'C:\Program Files\WinRAR\WinRAR.exe' -ArgumentList 'x -o+ "{PlayniteDir}/Emulation/Emulators/Xenia/xenia canary/xenia_canary.zip" "{PlayniteDir}/Emulation/Emulators/Xenia/xenia canary/"' -NoNewWindow -Wait
+
+# Delete the zip file
+Remove-Item "{PlayniteDir}/Emulation/Emulators/Xenia/xenia canary/xenia_canary.zip"
+
+# Update the last_updated.txt file with the current date
+(Get-Date).ToString() | Out-File $filePath

@@ -1,0 +1,22 @@
+Installl:
+
+1) Restart.ps1 goes in the playnite folder, e.g "D:/Apps/Playnite"
+
+2) Place xenia Canary.exe in playnite folder e.g "D:/Apps/Playnite/Emulation/Emulators/Xenia/Xenia Canary"
+
+3) when setting up xenia emu in playnite, make sure to select the folder mentioned above, go to profiles, script sections and do the following....
+
+for auto emu update once a week:
+open upate.txt and copy all, place this in the emu profile in script before emu opens.
+
+for working achivements:
+open xenia.txt and copy all the writting and paste in emu profile, script section on close.
+
+
+Set up:
+you need Success Story already working for other games, but for xenia make sure your xbox 360 games have achivemnts sourced via exophase,
+
+so cright click on game > Sucess story > Add 
+
+once thats done, play the rom, on close the script  will read the log file make a txt and mark unlocked achivemnets of in sucess story (doesnt loop log so itll only mark as unlocked after youve played it not during, for now)
+then itll run "restart.ps1" witch just checks your playnite version of "fullscreen" or "desktop" closes down and reopens, this forces success story to update its data
