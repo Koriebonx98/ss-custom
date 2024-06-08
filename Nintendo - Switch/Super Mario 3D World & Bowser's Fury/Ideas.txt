@@ -1,0 +1,35 @@
+Worlds:
+
+
+Stats:
+Coins
+Life's 
+Deaths:
+Enemies:
+Stamps:
+Green Stars:
+
+
+Achivements:
+
+"Compleate World 1" - "Compleate World 1"
+"Compleate World 2" - "Compleate World 2"
+"Compleate World 3" - "Compleate World 3"
+"Compleate World 4" - "Compleate World 4"
+"Compleate World 5" - "Compleate World 5"
+"Compleate World 6" - "Compleate World 6"
+
+"Compleate World Castle" - "Compleate World Castle"
+"Compleate World Bowser" - "Compleate World Bowser"
+"Compleate World Star" - "Compleate World Star"
+"Compleate World Mushroom" - "Compleate World Mushroom"
+"Compleate World Flower" - "Compleate World Flower"
+"Compleate World Crown" - "Compleate World Crown"
+"Unlock Rosalina"
+"Stamp Collector" - "Collect All Stars"
+"Extra Lives" - "get  999 lives"
+"50 Coins" 
+"1up" - "First 1up"
+"Lochness Monster" - "3 fitty Coins"
+"1000 Coins"
+"Conquarer" - "Get All Achivements"
