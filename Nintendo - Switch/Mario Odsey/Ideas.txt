@@ -1,0 +1,143 @@
+Rarity:
+common: 100% to 30.1%
+uncommon: 30% to 10.1%
+Rare:  10% to 2.1%
+Ultra: 2% or lower
+
+
+kingdoms: / Power Moons for next kingdom: 
+Cap Kingdom - 0 
+Cascade Kingdom - 5 (Moons in kingdom = 50)
+Sand Kingdom - 16
+Lake Kingdom - 8
+Wooded Kingdom - 16 
+Cloud Kingdom - 0 - Hat to Hat Combat (Boss?)
+Lost Kingdom - 10
+Metro Kingdom - 20
+Snow Kingdom - 10
+Seaside Kingdom - 10
+Luncheon Kingdom - 18
+Ruined Kingdom - 3
+Bowser's Kingdom - 8
+Moon Kingdom - 0
+
+Total:
+Kingdoms: 14
+Power Moons: 124
+
+
+Stats:
+Purple Coins!
+Power Moons! (/124) - (25/124) & (50/124) & (100/124) & (124/124)
+Enemies Killed
+Lives
+Deaths
+
+CAP_Tured:
+Frog
+Picture Match Part (Goomba)
+Spark Plyon
+Tropical Wiggler 
+Paragoomba
+Pole
+Chain Chomp
+MAnhole
+Big Chain Chomp
+Taxi
+Broode's Chain Chomp
+RC Car
+T-Rex
+Ty-foo
+Binoculars
+Shiverian Racer
+Bullet Bill
+Cheep Cheep (Snow Kingdom)
+Moe-Eye
+Gushen
+Cactus
+Lava Bubble
+Goomba
+Volbonan
+Knucklotec's Fist
+Hammer Bro
+Rocket
+Meat
+Glydon
+Fire Pirahana Plant
+Lakitu
+Pokio
+Zipper
+Jizo
+Cheap Cheap
+Bowser Statue
+Puzzle PArt (Lake Kingdom)
+Parabones
+Poison Pirahana Plant
+Banzai Bill
+Uproot
+Chargin' Chuck
+Fire Bro
+Sherm 
+Letter
+Coin Coffer
+Puzzle Part (Metro Kingdom)
+Tree
+Picture Match Part (Mario)
+Boulder
+Yoshi
+
+
+Achivements:
+Cap Kingdom:
+"Cappy" - "Meet Cappy & Compleate Tutorial" (99.9%)
+"Frog in my Throat" - "Turn into a Frog" (97.3%)
+"Broodal Fight #1" - "First Boss Fight" (96.4%)
+
+Cascaade:
+"Fossil Falls" - "Unlock Cascsde Kingdom" (96.0%)
+"First Power Moon" - "Get your first Power Moon" (96.0%)
+"Chompy" - "Turn into Chompy" (94.0%)
+"Madam Broode Fight" - "Cascade Kingdom Boss Battle" (92.7%)
+"Cascaded" - "Got all 50 Moons in Cascade Kingdom" (29.8%)
+
+Sand:
+"Sand in My Hat" - "Unlocked Sand Kingdom" (90.1%)
+"Crazy Hat Store" - "Visit Crazy Hat Store" (90.0%)
+"Broodal Fight #2" - "Broodal Fight #2" 
+"Knucklotec Fight" - "Knucklotec Fight" 
+
+lake:
+"Lake Kingdom" - "Unlock the Lake Kingdom"
+"Broodal Fight #3" -"Broodal Fight #3"1
+
+Wood:
+"Wood Kingdom" - "unlock Wood Kingdom"
+"Big Pirahana " - "Defeat Pirahana Plant"
+"Broodal Fight #4" - "Broodal Fight #4"
+"Broodal Family" - "Defaeat all 4 Broodals"
+"Bean Stalk" - "Activate the Bean Stalk"
+"Torkdrift Fight"
+
+Cloud:
+"Cloud Kingdom" - "Unlock Cloud Kingdom"
+"Hat to Hat Combat" - "Beat Bowser Fight"
+
+Lost:
+"Lost Kingdom" - "Unlock the Lost Kingdom"
+
+Metro:
+"The Big City" - "Unlock Metro City"
+"Rescue Cappy" - "Rescue Cappy From Klepto"
+"Mechawiggler Fight" - "Mechawiggler Fight"
+
+
+
+ 
+
+
+
+
+
+
+
+
